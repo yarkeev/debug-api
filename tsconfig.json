@@ -1,0 +1,52 @@
+{
+	"compilerOptions": {
+		"sourceMap": true,
+		"declaration": true,
+		"skipLibCheck": true,
+		"pretty": true,
+		"noImplicitAny": true,
+		"noUnusedLocals": true,
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"target": "es2015",
+		"experimentalDecorators": true,
+		"jsx": "react",
+		"allowJs": false,
+		"baseUrl": ".",
+		"outDir": "dist",
+		"paths": {
+			"@constants": [ "./src/constants/index" ],
+			"@constants/*": [ "./src/constants/*" ],
+			"@enums": [ "./src/enums/index" ],
+			"@enums/*": [ "./src/enums/*" ],
+			"@interfaces": [ "./src/interfaces/index" ],
+			"@interfaces/*": [ "./src/interfaces/*" ],
+			"@utils": [ "./src/utils/index" ],
+			"@utils/*": [ "./src/utils/*" ],
+			"@controllers": [ "./src/controllers/index" ],
+			"@controllers/*": [ "./src/controllers/*" ],
+			"@lib": [ "./src/lib/index" ],
+			"@lib/*": [ "./src/lib/*" ],
+
+			"@components/*": [ "src/settings/components/*" ],
+			"@ui": [ "./src/settings/components/ui/index" ],
+			"@ui/*": [ "./src/settings/components/ui/*" ],
+			"@icons": [ "./src/settings/assets/icons/index" ],
+			"@containers": [ "./src/settings/containers/index" ],
+			"@containers/*": [ "./src/settings/containers/*" ],
+
+			"*": [
+				"src/*"
+			]
+		},
+		"lib": [
+			"dom",
+			"es6"
+		]
+	},
+	"include": [
+		"typings/index.d.ts",
+		"src/**/*"
+	]
+}
+
